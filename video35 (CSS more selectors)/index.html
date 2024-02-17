@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS more selectors</title>
+    <style>
+        .box::first-letter {
+            font-size: xx-large;
+            color: red;
+            background-color: green;
+            text-transform: uppercase;
+
+        }
+
+        .box:nth-child(3) {
+            background-color: chartreuse;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Luci da Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .boxes * {
+            border: 2px solid turquoise;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis optio aperiam corrupti
+            laudantium necessitatibus sit, ipsa autem eaque! Blanditiis incidunt deserunt adipisci perferendis dolorem.
+            Quidem nesciunt aperiam praesentium ut unde obcaecati non iste vero facere, quia perferendis iure, porro
+            adipisci reprehenderit vitae id libero esse qui itaque expedita fuga! Ipsum neque nemo quas tenetur facilis
+            ad, tempora sunt ab dolor.</div>
+        <div class="box">hey, I am a box</div>
+        <div class="box">hey, I am a box</div>
+    </div>
+</body>
+
+</html>

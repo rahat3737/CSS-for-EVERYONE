@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p3</title>
+    <style>
+        body {
+            background-color: greenyellow;
+        }
+
+        @media only screen and (max-width:450px) {
+            body {
+                background-color: orangered;
+            }
+
+            div {
+                font-size: x-large;
+                font-style: italic;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            border: 4px solid purple;
+            height: 300px;
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Dhaka</div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

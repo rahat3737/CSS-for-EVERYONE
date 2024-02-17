@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* it is an universal selector */
+        *{
+            background-color: bisque;
+        }
+        /* element selector */
+        p{
+            background-color: bisque;
+        }
+        /* class selector */
+        .on{
+            background-color: aqua;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+        }
+        /* id selector */
+        #onetwo{
+            background-color: blue;
+            color: chartreuse;
+        }
+        /* child selector */
+        div>h3{
+            background-color: black;
+            color: azure;
+        }
+        /* descendant selector */
+        div p{
+            background-color: rgb(37, 181, 18);
+            color: aliceblue;
+        }
+
+
+                                       /* pesudo selector */
+
+
+        /* unvisited link */
+        a:link{
+            color: rgb(255, 0, 162);
+        }
+        /* visited link */
+        a:visited{
+            color: blue;
+        }
+        /* mouse over link */
+        a:hover{
+            color: rgb(72, 134, 136);
+        }
+        /* selected link */
+        a:selected{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p>Rahat is a good boy.</p>
+    <p class="on">Dhaka is a messi city but government is trying to develop and make it cleaned.</p>
+    <p id="onetwo">Where are you going?</p>
+    <div>
+        <h3>Thimpu is the capital of Bhutan</h3>
+        <p>A burger bread should tinder and soft.</p>
+    </div>
+    <div>
+        <a href="https://www.promo.monetag.com/">Earn Money Fast</a>
+    </div>
+</body>
+</html>

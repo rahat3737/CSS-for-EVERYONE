@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity and cascade</title>
+    <style>
+        p{
+            color: rgb(0, 0, 0);
+            
+        }
+        .kyt{
+            color: chartreuse;
+        }
+        .ijk{
+            /* color: blue !important; */
+        }
+        .fgr{
+            color: rgb(248, 11, 11);
+        }
+        .atten{
+            font-size: x-large;
+            border: 2px solid green;
+            text-align: center;
+        }
+        #title{
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: darkgreen;" id="title" class="kyt ijk fgr"><b>We live in Gambia</b></p>
+
+    <p class="atten">PLEASE GO TO THE SOURCE CODE AND READ THE COMMENTS</p>
+
+
+    <!-- If we want to work in css, we need to understand CSS selectors. There are several kinds of selectors.
+    there are some selectors with their position & number.
+    <ol>
+        <li>Universal Selector-0</li>
+        <li>Element selectors and pseudo-elements-1</li>
+        <li>Class selectors, attribute selectors, and pseudo-classes-10</li>
+        <li>ID selectors-100</li>
+        <li>Inline styles: 1000</li>
+        <li>important-10000</li>
+    </ol> -->
+
+    <!-- here we can see that the font color is blue. why this happend? there is a reason behind it! We have already read that, the priority list is (!important-inline style- Id selector-class or attibute selector-element select-universal selector).0,1,10,100,1000,10000 >> here is the marks distribution among the seklectors..... last to first. So, the font color is that we saw is blue. And it's point rate is 10000. As it is the most rated selectors, so the text appear blue. -->
+
+
+
+    <!-- !!!!!!!!VERY IMPORTANT LESSON!!!!!!!!!!! -->
+
+        
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: green;
+            --seccolor: rgb(0, 0, 0);
+            --neccolor: white;
+        }
+        *{
+            /* margin: 10px; */
+            padding: 25px;
+        }
+        .dhaka{
+            background-color: brown;
+            color: aliceblue;
+        }
+        ul li{
+            padding: 25px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul li:first-child{
+            background-color: var(--color);
+            /* color: var(--eccolor); */
+        }
+        .khulna{
+            background-color: rgb(216, 106, 106);
+            color: aliceblue;
+        }
+        .one{
+            background-color: var(--seccolor);
+        }
+        .two{
+            background-color: var(--neccolor);
+            color: var(--seccolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dhaka">
+        <ul>
+            <li>Haji</li>
+            <li class="one">Mohammad</li>
+            <li class="two">Muhsin</li>
+            <li>Hall</li>
+        </ul>
+    </div>
+    <div class="khulna">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui autem perferendis at iste eaque consectetur repellendus vero saepe doloremque totam culpa asperiores earum facilis modi laborum amet eos molestias? Non voluptate, dicta cum fugiat quis totam praesentium explicabo dolor quaerat consequuntur dolorum repudiandae soluta dolore id amet nobis minima.
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: rgb(255, 255, 255);
+            --seccolorr: blue;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nab {
+            background-color: crimson;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: 25px;
+            list-style: none;
+        }
+        ul li:first-child {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: rgb(241, 85, 117);
+            color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nab">
+        <ul>
+            <li>Born</li>
+            <li>Live</li>
+            <li>Die</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Management information systems (MIS) is a department within an enterprise responsible for controlling the
+        hardware and software systems that the organization uses to make business-critical decisions.
+    </div>
+</body>
+
+</html>
