@@ -1,1 +1,1 @@
-coing is life
+coding is life
